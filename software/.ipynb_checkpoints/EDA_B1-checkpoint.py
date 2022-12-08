@@ -21,7 +21,7 @@ for i in t:
     start_time=i['time (min)'].values[0]
     i['growth_time']=i['time (min)']-start_time
 df=pd.concat(t)
-warnings.filterwarnings('once')
+warnings.filterwarnings('ignore')
 df
 
 gb=df.groupby(['bacterium'])
@@ -54,7 +54,6 @@ p.legend.padding = 1
 p.legend.click_policy="mute"
 
 bokeh.io.show(p)
-
 
 
 

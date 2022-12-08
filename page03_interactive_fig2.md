@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Bacterium 1 - Growth events 
+title: Bacterium 2 - Growth events 
 permalink: interactive_a
 sidebar: true
-interactive: EDA_B1.html
+interactive: EDA_B2.html
 ---
 ---
 
-## Growth events for bacterium 1
+## Growth events for bacterium 2
 Click on the side bar to choose which growth events to show and use the magnifying glass to zoom in.  
 
 

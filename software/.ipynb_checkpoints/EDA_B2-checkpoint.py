@@ -21,13 +21,15 @@ for i in t:
     start_time=i['time (min)'].values[0]
     i['growth_time']=i['time (min)']-start_time
 df=pd.concat(t)
-warnings.filterwarnings('ignore')
+warnings.filterwarnings('once')
 df
 
 gb=df.groupby(['bacterium'])
 first, second =[gb.get_group(x) for x in gb.groups]
 
-p = bokeh.plotting.figure(
+# Bacterium 2 Plot
+
+p2 = bokeh.plotting.figure(
     x_axis_label="growth_time",
     y_axis_label="area (µm²)",
     frame_height=400,
@@ -37,8 +39,8 @@ p = bokeh.plotting.figure(
 # Colors for trails
 colors = colorcet.b_glasbey_category10
 
-for gevent, g in first.groupby("growth event"):
-    p.circle(
+for gevent, g in second.groupby("growth event"):
+    p2.circle(
         x="growth_time",
         y="area (µm²)",
         source=g,
@@ -47,13 +49,13 @@ for gevent, g in first.groupby("growth event"):
         legend_label=f"growth event {gevent}",
     )
 
-p.title.text = 'Bacterium 1'
-p.add_layout(p.legend[0], 'right')
-p.legend.spacing = 1
-p.legend.padding = 1
-p.legend.click_policy="mute"
+p2.title.text = 'Bacterium 2'
+p2.add_layout(p2.legend[0], 'right')
+p2.legend.spacing = 1
+p2.legend.padding = 1
+p2.legend.click_policy="mute"
 
-bokeh.io.show(p)
+bokeh.io.show(p2)
 
 
 # myplot_html = file_html(p, CDN)
@@ -66,5 +68,9 @@ bokeh.io.show(p)
 
 from IPython.core.display import HTML
 HTML(myplot_html)
+
+
+
+
 
 
