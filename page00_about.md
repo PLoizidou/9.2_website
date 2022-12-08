@@ -2,7 +2,7 @@
 layout: page
 title: About
 description: Caulobacter Growth
-img: Caulobacter_crescentus.png # Add image post (optional)
+img: Caulobacter_crescentus.jpg # Add image post (optional)
 caption: "Caulobacter crescentus"
 permalink: index.html
 sidebar: true
