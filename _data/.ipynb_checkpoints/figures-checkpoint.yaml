@@ -1,0 +1,11 @@
+- fig:
+  title: "Fig. 1: EDA for Bacterium 1 "
+  filename: EDA_B1.py
+  desc:  Used to generate figure_1
+  pic: bokeh_plot.png
+  req:
+    - ds: 
+      storage: remote
+      title: Dataset 1
+      link: "https://s3.amazonaws.com/bebi103.caltech.edu/data/caulobacter_growth_events.csv"
+
