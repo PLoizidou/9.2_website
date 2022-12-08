@@ -14,27 +14,14 @@ title: >
 authors: >
   Joud Mar'i, Kimberley Tanatswa Muchenje, Panagiota Loizidou
 Abstract: >
-  This is a website template for conveying your data, code, and
-  overall scientific story to the general public! See the
-  [GitHub](https://github.com/gchure/reproducible_website) for the actual code
-  used to generate this website, along with lengthy documentation about how to use
-  it. This is meant to be used in tandem with the [GitHub repository template for
-  reproducible research](https://github.com/gchure/reproducible_research). The
-  Rest of this website is filled with dummy text (my favorite, [Hiptser
-  Ipsum](https://hipsum.co/)) for demonstrative purposes. It can even include
-  math like
-
-
-  $$S = k_b\ln \Omega. \tag{1}$$
-
-
-
   This website is an online repository for our work on examining the growth and division of Caulobacter crescentus over time. Studying the growth and division
   of individual cells is crucial for understanding how organisms develop, how tumores grow, and many other fundamental biological processes. Our team tried 
   to establish a generative model to describe the growth of single Caulobacter cells.
+
 Summary:  >
   In this work, we explore whether Caulobacter bacterium grows exponentially or linearly by considering 2 theoretical models. We build a generative model for each
   and perform parameter estimates for a0 (area bacterium occupies in the microscope) and k (growth rate). We conclude by comparing the two models to see which better describes 
   bacterium growth. 
+
 Acknowledgments: > 
   The lab of Norbert Scherer at the University of Chicago acquired the data used in this analysis and published the work in PNAS. 
