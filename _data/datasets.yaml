@@ -1,8 +1,8 @@
 - dataset:
-  storage: local
-  name: Sampling statistics from some fancy experiment
+  storage: remote
+  name: Caulobacter Growth Events
   filetype: ".csv"
-  link: dataset1.csv
+  link: https://s3.amazonaws.com/bebi103.caltech.edu/data/caulobacter_growth_events.csv
   filesize: "24 MB"
 
 - dataset:
