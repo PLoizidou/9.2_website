@@ -10,22 +10,21 @@
 # ##############################################################################
 - author:
   name: Joud Mar'i
-  link: "https://en.wikipedia.org/wiki/Drosophila"
+  link: "https://github.com/Joud-Mari"
   title: Doctoral Student 
-  img: dr_osophila.jpg
-  institute: California Institute of Technologyhttps://ploizidou.github.io/9.2_website/
-  other_info:
-     Email Address: "flyguy@university.edu"
-- author:
-  name: Dr. Melanie O'Gaster
-  link: "https://en.wikipedia.org/wiki/Drosophila_melanogaster"
-  title: Postdoctoral Scholar
-  img: melanogaster.jpg
-  institute: French Flag Research Institute
-  other_info:
-    Current Location: Apple Juice Plates, Inc
+  img: sara3.jpeg
+  institute: California Institute of Technology
+
+- author: 
+  name: Kimberley Tanatswa Muchenje
+  link: "https://github.com/kimuchenje"
+  title: Doctoral Student
+  img: sara2.jpeg
+  institute: California Institute of Technology
 
 - author:
-  name: Sally Monella
-  title: Research Technician
-  institute: French Flag Research Institute
+  name: Panagiota Loizidou
+  link: "https://github.com/PLoizidou"
+  title: Doctoral Student
+  img: sara.jpeg
+  institute: California Institute of Technology
