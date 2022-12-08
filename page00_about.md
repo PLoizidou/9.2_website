@@ -1,9 +1,9 @@
 ---
 layout: page
 title: About
-description: Information about the project, website, and links to the paper and SI
-img: about.png # Add image post (optional)
-caption: "A Serious Man (2010)"
+description: Caulobacter Growth
+img: Caulobacter_crescentus.png # Add image post (optional)
+caption: "Caulobacter crescentus"
 permalink: index.html
 sidebar: true
 ---
