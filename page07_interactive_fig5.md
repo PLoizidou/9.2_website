@@ -7,7 +7,7 @@ interactive: EDA_secondgrid.html
 ---
 ---
 
-## ECDF
+
 Individual growth events for Bacterium 2. 
 
 

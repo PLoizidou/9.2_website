@@ -7,7 +7,7 @@ interactive: EDA_firstgrid.html
 ---
 ---
 
-## ECDF
+
 Individual growth events for Bacterium 1. 
 
 
