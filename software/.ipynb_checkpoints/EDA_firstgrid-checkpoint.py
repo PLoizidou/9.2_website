@@ -1,15 +1,17 @@
-# %%
 import warnings
 import os
 import numpy as np
 import pandas as pd
+import scipy.optimize
+import scipy.stats as st
+from scipy.special import erf
 import colorcet
+import tqdm
 import bokeh.io
 from bokeh.plotting import figure, show
+from bokeh.layouts import row
 from bokeh.transform import jitter
-from IPython.core.display import HTML
-from bokeh.resources import CDN
-from bokeh.embed import file_html
+import iqplot
 
 data_path= "../datasets/"
 df = pd.read_csv(os.path.join(data_path, 'caulobacter_growth_events.csv'), header=0)
@@ -28,43 +30,26 @@ df
 gb=df.groupby(['bacterium'])
 first, second =[gb.get_group(x) for x in gb.groups]
 
-# Bacterium 2 Plot
+plots = [
+    bokeh.plotting.figure(
+        x_axis_label="growth_time",
+        y_axis_label="area (µm²)",
+        frame_height=150,
+        frame_width=200,
+        title=f"growth event {gevent}",
+    )
+    for gevent in first["growth event"].unique()
+]
 
-p2 = bokeh.plotting.figure(
-    x_axis_label="growth_time",
-    y_axis_label="area (µm²)",
-    frame_height=400,
-    frame_width=450,
-)
-
-# Colors for trails
-colors = colorcet.b_glasbey_category10
-
-for gevent, g in second.groupby("growth event"):
-    p2.circle(
+for gevent, g in first.groupby("growth event"):
+    plots[gevent].circle(
         x="growth_time",
         y="area (µm²)",
         source=g,
         size=2,
-        color=colors[gevent],
-        legend_label=f"growth event {gevent}",
     )
 
-p2.title.text = 'Bacterium 2'
-p2.add_layout(p2.legend[0], 'right')
-p2.legend.spacing = 1
-p2.legend.padding = 1
-p2.legend.click_policy="mute"
-
-bokeh.io.show(p2)
-
-
-# myplot_html = file_html(p, CDN)
-# # this HTML code is very long (~30 K), the cell below doesn't show all the code in NBviewer
-# print(myplot_html) 
-
-
-# %%
+bokeh.io.show(bokeh.layouts.gridplot(plots, ncols=3))
 
 
 from IPython.core.display import HTML

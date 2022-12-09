@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bacterium 2 - Growth events 
-permalink: interactive_a
+permalink: interactive_b
 sidebar: true
 interactive: EDA_B2.html
 ---

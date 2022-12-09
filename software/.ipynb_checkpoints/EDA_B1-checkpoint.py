@@ -56,5 +56,15 @@ p.legend.click_policy="mute"
 bokeh.io.show(p)
 
 
+# myplot_html = file_html(p, CDN)
+# # this HTML code is very long (~30 K), the cell below doesn't show all the code in NBviewer
+# print(myplot_html) 
+
+
+# In[5]:
+
+
+from IPython.core.display import HTML
+HTML(myplot_html)
 
 

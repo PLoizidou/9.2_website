@@ -6,6 +6,17 @@
   req:
     - ds: 
       storage: remote
-      title: Dataset 1
+      title: Dataset 
+      link: "https://s3.amazonaws.com/bebi103.caltech.edu/data/caulobacter_growth_events.csv"
+
+- fig:
+  title: "Fig. 2: EDA for Bacterium 2 "
+  filename: EDA_B2.py
+  desc:  Used to generate figure_1
+  pic: bokeh_plot.png
+  req:
+    - ds: 
+      storage: remote
+      title: Dataset 
       link: "https://s3.amazonaws.com/bebi103.caltech.edu/data/caulobacter_growth_events.csv"
 
