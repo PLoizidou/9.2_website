@@ -1,6 +1,60 @@
 - script:
-  name: hw9_2.py
+  name: EDA_B1.html
   desc: >
     Full code and analysis
 
+- script:
+  name: EDA_B1.py
+  desc: >
+    Full code and analysis
+
+- script:
+  name: EDA_B2.py
+  desc: >
+    Full code and analysis
+
+- script:
+  name: EDA_ecdf.html
+  desc: >
+    Full code and analysis
+
+- script:
+  name: EDA_ecdf.py
+  desc: >
+    Full code and analysis
+
+- script:
+  name: EDA_firstgrid.html
+  desc: >
+    Full code and analysis
+
+- script:
+  name: EDA_firstgrid.py
+  desc: >
+    Full code and analysis
+
+- script:
+  name: EDA_secondgrid-Copy1.html
+  desc: >
+    Full code and analysis
+
+- script:
+  name: EDA_secondgrid.html
+  desc: >
+    Full code and analysis
+
+- script:
+  name: EDA_secondgrid.py
+  desc: >
+    Full code and analysis
+
+- script:
+  name: hw9.1.html
+  desc: >
+    Full code and analysis
+
+- script:
+  name: hw9.1.ipynb
+  desc: >
+    Full code and analysis
 
