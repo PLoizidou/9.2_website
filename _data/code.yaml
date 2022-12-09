@@ -58,3 +58,15 @@
   desc: >
     Full code and analysis
 
+- script:
+  name: hw9.2.ipynb
+  desc: >
+    Full code and analysis
+
+
+- script:
+  name: hw9.2.html
+  desc: >
+    Full code and analysis
+
+    
