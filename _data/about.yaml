@@ -22,6 +22,23 @@ Summary:  >
   In this work, we explore whether Caulobacter bacterium grows exponentially or linearly by considering 2 theoretical models. We build a generative model for each
   and perform parameter estimates for a0 (area bacterium occupies in the microscope) and k (growth rate). We conclude by comparing the two models to see which better describes 
   bacterium growth. 
-
-Acknowledgments: > 
+  The data we use in this data analysis project comes from a clever experimental set-up that allows 
+  imaging of single dividing cells in conditions that are identical through time. This is accomplished by taking 
+  advantage of a unique morphological feature of Caulobacter. The mother cell is adherent to the a surface through its 
+  stalk. Upon division, one of the daughter cells does not have a stalk and is mobile. The system is part of a 
+  microfluidic device that gives a constant flow. So, every time a mother cell divides, the un-stalked daughter cell 
+  gets washed away. In such a way, the dividing cells are never in a crowded environment and the buffer is always 
+  fresh. This also allows for easier segmentation.
+  It is well known that in ideal conditions, bacteria grow exponentially. One bacterium divides to form two, those 
+  two divide to form four, those four divide to form eight, and so on. We were able to use the data produced as 
+  described above to identify a model that best describes the growth of a single bacterium.
+  We examined a linear and an exponential model and our results show that the two models are similar to each other. 
+  In fact, if we write the exponential equation as a Taylor series and truncate at the first term, we get the linear 
+  equation.
+  Another point of consideration is the regime from which we collected the measurements. Essentially exponential 
+  growth can be seen as linear if we "zoom in" in time enough. So even in the cases where the linear model works better, we 
+  cannot rule out the scenario of exponential growth. 
+ 
+ 
+  Acknowledgments: > 
   The lab of Norbert Scherer at the University of Chicago acquired the data used in this analysis and published the work in PNAS. 
